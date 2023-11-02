@@ -1,0 +1,116 @@
+ /* Estilos generales */
+ body {
+    font-family: Arial, sans-serif;            
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    
+}
+
+/* Formulario para agregar tareas */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de tareas */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.button-container {
+    display: flex;
+}
+
+/* Checkbox de tarea */
+.task-checkbox {
+    margin-right: 10px;
+
+}
+
+.task-checkbox:checked {
+    background-color: #00aa00;
+    /* Verde */
+}
+
+/* Etiqueta de tarea */
+.task-label {
+    font-size: 18px;
+}
+
+/* Estilo para tareas completadas */
+.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Botón de eliminar tarea */
+.delete-form #delete_task {
+    background-color: #fff;
+    color: #ff6347;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón de ver información de tarea */
+.delete-form #info_task {
+    background-color: #fff;
+    color: #22c550;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-form #delete_task:hover {
+    color: #d6412f;
+}
+
+.delete-form #info_task:hover {
+    color: green;
+}
+
+/* Formulario de eliminar tarea */
+.delete-form {
+    margin-left: 10px;
+}
