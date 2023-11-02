@@ -31,7 +31,7 @@
                 <form id="form-{{ $task->id }}" method="POST" action="{{ route('tasks.update', $task->id) }}">
                     @csrf
                     @method('PATCH')
-                    <input type="checkbox" class="task-checkbox" data-task-id="{{ $task->id }}" onclick="submitForm({{ $task->id }})" name="chbx_done" {{ $task->done ? 'checked' : '' }}>
+                    <input type="checkbox" class="task-checkbox" data-task-id="{{ $task->id }}" onclick="this.form.submit()" name="chbx_done" {{ $task->done ? 'checked' : '' }}>
                     <label class="task-label {{ $task->done ? 'done' : '' }}">{{ $task->name }}</label>
                 </form>
 
@@ -58,11 +58,7 @@
             @endforeach
         </ul>
     </div>
-    <script>
-        function submitForm(taskId) {
-            document.querySelector('#form-' + taskId).submit();
-        }
-    </script>
+    
 </body>
 
 </html>
